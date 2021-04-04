@@ -21,8 +21,8 @@ def takecommand():
     try:
         print("Recognizing....")
         query = r.recognize_google(audio, language='en-in')
-        #speak(f"You said: {query}\n")
-        print(f"You said: {query}\n")
+        speak(f"You said: {query}\n")
+        #print(f"You said: {query}\n")
     except Exception as e:
         #print(e)
         print("I can't hear that sir, please say it again.")
